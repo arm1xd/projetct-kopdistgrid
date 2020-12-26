@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    grid-template-areas: 
+       "image3 image4 image4 ."
+       "image2 image2 image5 ."
+       "image8 image7 image9 image6 ";
+       grid-template-rows: 70px 50px 120px;
+       grid-template-columns:120px 150px 170px 130px;   
+
+}
+div{
+    background-color: aquamarine;
+    margin:12px 4px;
+}
+
+.page1{
+    grid-area: image1;
+    background-color: rgb(167, 167, 167);
+}
+.page2{
+    grid-area: image2;
+    background-color: aquamarine;
+}
+.page3{
+    grid-area: image3;
+    background-color: orange;
+}
+.page4{
+    grid-area: image4;
+    background-color: blueviolet;
+}
+.page5{
+    grid-area: image5;
+    background-color: rgb(0, 255, 0);
+}
+.page6{
+    grid-area: image6;
+    background-color: rgb(49, 5, 90);
+}
+.page7{
+    grid-area: image7;
+    background-color: rgb(38, 0, 128);
+}
+.page8{
+    grid-area: image8;
+    background-color: rgb(128, 0, 0);
+}
+.page9{
+    grid-area: image9;
+    background-color: burlywood;
+}
+
+@media all and (max-width: 600px){
+   body{
+    display: grid;
+    grid-template-areas: 
+     "image3"
+     "image2"
+     "image1"
+     "image8";
+       grid-template-rows: 70px 50px 120px;
+       grid-template-columns:120px 150px 170px 130px;   
+
+}  
+}
